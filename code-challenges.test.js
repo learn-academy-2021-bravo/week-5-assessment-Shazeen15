@@ -91,7 +91,8 @@ const hasLetterA = (arr) => {
     return that word in the filtered array
     */
   let onlyA = arr.filter((value) => {
-    return value.includes("a") || value.includes("A");
+    // return value.includes("a") || value.includes("A");
+    return value.toLowerCase().includes("a");
   });
   // console.log(onlyA);
   return onlyA;
